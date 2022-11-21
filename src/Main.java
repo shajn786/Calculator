@@ -23,7 +23,7 @@ public class Main {
             num2 = sc.nextInt();
 
 
-
+//               calculation
 
 
 
@@ -35,6 +35,8 @@ public class Main {
 
                 case "-":
 
+
+
                     result = num1 - num2;
                     System.out.println("Result is" + result);
 
@@ -45,11 +47,18 @@ public class Main {
 
                 case "/":
 
-                    result = num1  / num2;
-                    System.out.println("Result is " + result);
+                    try {
+                        result = num1 / num2;
+                        System.out.println("Result is " + result);
+                    }
+                    catch(Exception e)
+                    {
+                        System.out.println("exception occured"+e.toString());
+                    }
 
                     default:
                         System.out.println("enter correct input");
+                        break;
 
 
             }
