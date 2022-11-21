@@ -34,6 +34,11 @@ public class Main {
                     result = num1 - num2;
                     System.out.println("Result is" + result);
 
+                case "*":
+
+                    result = num1  * num2;
+                    System.out.println("Result is" + result);
+
             }
 
 
